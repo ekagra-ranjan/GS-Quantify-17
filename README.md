@@ -3,7 +3,6 @@ Code for GS-Quantify' 17 competition organised by Goldmann Sachs
 
 <br/><br/>
   
-  
-# RESULT: 
-3rd rank in IIT Guwahati in ML Section  
-National Rank 32 in ML Section 
+## RESULT: 
+**3rd** rank in IIT Guwahati in ML Section  
+National Rank **32** in ML Section 
