@@ -24,12 +24,60 @@ Declared <b> 'Outstanding Performer' </b> by American Express.
 
 ## Data Visualisation
 
+Here `gc` stands for Garbage Collector.
+
 <p  align="center">
 <img src="./plots/1.png">
+  <br>
+  <b> initial-Used-Memory (y-axis) vs gc-Initial-Memory (x-axis)</b>
 </p>
 
-<i>The gcInitialMemory was plotted in x axis with initialUsedMemory. The plot shows us that there is a good 
-linear relationship between the 2 variabes.</i>
+
+The plot shows us that there is a linear relationship between the 2 variabes.
+
+
+
+<p  align="center">
+<img src="./plots/2.png">
+  <br>
+  <b> Final-Used-Memory vs gc-Final-Memory</b>
+</p>
+
+
+The plot shows us that there is a linear relationship between the 2 variabes.
+
+
+
+
+<p  align="center">
+<img src="./plots/3.png">
+  <br>
+  <b> initial-Used-Memory + initial-Free-Memory  vs gc-Total-Memory</b>
+</p>
+
+
+The plot shows us that there is a linear relationship between the 2 variabes.
+
+
+<p  align="center">
+<img src="./plots/4.png">
+  <br>
+  <b> initial-Used-Memory + initial-Free-Memory  vs final-Used-Memory + final-Free-Memory </b>
+</p>
+
+
+The plot shows us that there is a linear relationship between the 2 variabes. We observe 3 outliers in this plot which we remove before proceeding.
+
+
+
+<p  align="center">
+<img src="./plots/5.png">
+  <br>
+  <b> initial-Used-Memory + initial-Free-Memory  vs final-Used-Memory + final-Free-Memory </b>
+</p>
+
+
+The plot shows us that there is a linear relationship between the 2 variabes.
 
 
 ## Approximations Used
@@ -57,11 +105,11 @@ Following the plots and approximations we predicted:
 
 * **XGBOOST**
 
-Xgboost was used to determine the **gcRun**. We gave parameters to xgboost as: **resources**, **initialMemoryUsed**, **initialMemoryFree**, **cpuTimeTaken**.
+  Xgboost was used to determine the **gcRun**. We gave parameters to xgboost as: **resources**, **initialMemoryUsed**,         **initialMemoryFree**, **cpuTimeTaken**.
 
-We chose this model as the output was not in linearly related to the parameters. We confirmed this creating a cross validation set and checking the accuracy of a linear model such as logistic regression, linear SVM( both hard-margin and soft-margin). The result came to be very poor. We also tried SVM with ‘rbf’ kernel, which wasn’t much an improvement from the linear models. 
+  We chose this model as the output was not in linearly related to the parameters. We confirmed this creating a cross validation set and checking the accuracy of a linear model such as logistic regression, linear SVM( both hard-margin and soft-margin). The result came to be very poor. We also tried SVM with ‘rbf’ kernel, which wasn’t much an improvement from the linear models. 
 
-So we applied Xgboost was the best among the other models due to the nonlinear relationship between taget and parameters. Xgboost being an ensemble method has the added advantage of not being overfitted easily while preserving the accuracy.  
+  So we applied Xgboost was the best among the other models due to the nonlinear relationship between taget and parameters. Xgboost being an ensemble method has the added advantage of not being overfitted easily while preserving the accuracy.  
 
 ## Strategy for deciding the results
 To predict **gcRun**:
