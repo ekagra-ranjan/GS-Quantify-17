@@ -26,12 +26,10 @@ Declared <b> 'Outstanding Performer' </b> by American Express.
 
 <p  align="center">
 <img src="./plots/1.png">
-<i>
-  The gcInitialMemory was plotted in x axis with initialUsedMemory. The plot shows us that there is a good 
-linear relationship between the 2 variabes.
-
-  </i>
 </p>
+
+<i>The gcInitialMemory was plotted in x axis with initialUsedMemory. The plot shows us that there is a good 
+linear relationship between the 2 variabes.</i>
 
 
 ## Approximations Used
@@ -58,6 +56,7 @@ Following the plots and approximations we predicted:
 
 
 * **XGBOOST**
+
 Xgboost was used to determine the **gcRun**. We gave parameters to xgboost as: **resources**, **initialMemoryUsed**, **initialMemoryFree**, **cpuTimeTaken**.
 
 We chose this model as the output was not in linearly related to the parameters. We confirmed this creating a cross validation set and checking the accuracy of a linear model such as logistic regression, linear SVM( both hard-margin and soft-margin). The result came to be very poor. We also tried SVM with ‘rbf’ kernel, which wasn’t much an improvement from the linear models. 
@@ -66,9 +65,10 @@ So we applied Xgboost was the best among the other models due to the nonlinear r
 
 ## Strategy for deciding the results
 To predict **gcRun**:
+
 We used the xgboost to predict ‘gcRun’. We supplied **resources** feature to the xgboost algorithm by saved value of resources that we obtained from the training set. Eg: token_53 had ‘resources’ as 0.047545312750000325 which was obtained from training set.
 
-To predict ‘initialFreeMemory’:
+To predict **initialFreeMemory**:
 
 * We computed initialFreeMemory as previous query’s finalFreeMemory
 * We computed initialUsedMemory as previous query’s finalUsedMemory
