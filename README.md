@@ -22,6 +22,18 @@ Declared <b> 'Outstanding Performer' </b> by American Express.
 
 ## ML Problem Statement - Predicting Garbage Collector Invocation
 
+## Data Visualisation
+
+<p  align="center">
+<img src="./plots/1.png">
+<i>
+  The gcInitialMemory was plotted in x axis with initialUsedMemory. The plot shows us that there is a good 
+linear relationship between the 2 variabes.
+
+  </i>
+</p>
+
+
 ## Approximations Used
 Following approximations were made:
 * gcInitialMemory = initialUsedMemory
