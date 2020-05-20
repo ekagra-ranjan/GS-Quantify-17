@@ -126,3 +126,17 @@ To predict **initialFreeMemory**:
 * We computed finalFreeMemory as initialFreeMemory+initialUsedMemory-finalUsedMemory of same query
 
 This finalFreeMemory then becomes the output for that query as the initialFreeMemory
+
+
+<br>
+<br>
+
+## Github repos of similar Data Science Competitions:
+
+* [Analyze-This-18](https://github.com/ekagra-ranjan/Analyze-This-18)
+* [Analyze-This-17](https://github.com/ekagra-ranjan/Analyze-This-17)
+* [Inter-IIT-Techmeet-17](https://github.com/ekagra-ranjan/Optimal-Bidding/)
+
+<p align="center">
+	Please star the repo if you found the materials in the repo useful :)
+</p>
