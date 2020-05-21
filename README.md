@@ -134,6 +134,7 @@ This finalFreeMemory then becomes the output for that query as the initialFreeMe
 * [Analyze-This-18](https://github.com/ekagra-ranjan/Analyze-This-18)
 * [Analyze-This-17](https://github.com/ekagra-ranjan/Analyze-This-17)
 * [Inter-IIT-Techmeet-17](https://github.com/ekagra-ranjan/Optimal-Bidding/)
+* [awesome-undergrad-hackathons](https://github.com/ekagra-ranjan/awesome-undergrad-hackathons)
 
 <p align="center">
 	Please star the repo if you found the materials in the repo useful :)
