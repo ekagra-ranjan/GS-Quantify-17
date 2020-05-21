@@ -13,9 +13,7 @@ GS-Quantify-17
   <a href="https://github.com/ekagra-ranjan/GS-Quantify-17/raw/master/Method-Presentation-yoKnockers.pptx"><img src="http://img.shields.io/badge/Team Name-Yo Knockers-purple.svg"></a>
 </p>
 
-<p align="center">
-Declared <b> 'Outstanding Performer' </b> by American Express.
-</p>
+
 
 <br>
 <br>
